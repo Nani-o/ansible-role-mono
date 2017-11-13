@@ -1,7 +1,8 @@
 ---
 - name: Add mono yum repo
   yum_repository:
-    url: "{{ mono_yum_repo }}"
+    name: mono
+    baseurl: "{{ mono_yum_repo }}"
     gpgkey: "{{ mono_yum_gpgkey }}"
     description: "{{ mono_yum_description }}"
     state: present
