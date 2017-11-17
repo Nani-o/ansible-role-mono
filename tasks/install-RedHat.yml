@@ -11,3 +11,9 @@
   yum:
     name: "{{ mono_package }}"
     state: latest
+
+- name: Install mono extra packages
+  yum:
+    name: "{{ mono_extra_packages }}"
+    state: latest
+  when: "mono_extra_packages is defined"

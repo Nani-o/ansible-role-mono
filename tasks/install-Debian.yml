@@ -15,3 +15,9 @@
     name: "{{ mono_package }}"
     update_cache: yes
     state: latest
+
+- name: Install mono extra packages
+  apt:
+    name: "{{ mono_extra_package }}"
+    update_cache: yes
+    state: latest
