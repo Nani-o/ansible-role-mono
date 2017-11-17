@@ -18,6 +18,6 @@
 
 - name: Install mono extra packages
   apt:
-    name: "{{ mono_extra_package }}"
+    name: "{{ mono_extra_packages }}"
     update_cache: yes
     state: latest
