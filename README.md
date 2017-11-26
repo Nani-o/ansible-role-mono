@@ -5,8 +5,8 @@ mono
 
 The only purpose of this role is to install Mono (the cross platform and open source .NET framework) on Linux hosts.
 
-Requirements
-------------
+Compatibility
+-------------
 
   - CentOS 6
   - CentOS 7
