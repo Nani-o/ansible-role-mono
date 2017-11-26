@@ -19,7 +19,7 @@ install:
   - git clone https://github.com/Nani-o/ansible-template-role-test /etc/ansible
   # Executing setup
   - ansible-playbook /etc/ansible/setup.yml
-  - sudo -E su $USER -c "ansible-playbook /etc/ansible/test.yml"
+  - sudo -E ansible-playbook /etc/ansible/test.yml
 
 script:
   # Run tests.
