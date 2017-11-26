@@ -21,3 +21,4 @@
     name: "{{ mono_extra_packages }}"
     update_cache: yes
     state: latest
+  when: "mono_extra_packages is defined"
