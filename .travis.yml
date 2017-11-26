@@ -8,13 +8,15 @@ sudo: true
 env:
   - distribution: ubuntu
     distribution_version: 16
-  - distribution: ubuntu
-    distribution_version: 14
+  # - distribution: ubuntu
+  #   distribution_version: 14
 
 install:
   # Installing latest ansible
   - sudo -H pip install ansible
   # Cloning testing template
+  - sudo mkdir /etc/ansible
+  - sudo chown -R "${USER}:" /etc/ansible
   - git clone https://github.com/Nani-o/ansible-template-role-test /etc/ansible
 
 script:
