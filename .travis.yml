@@ -1,0 +1,22 @@
+---
+dist: trusty
+language: python
+python: "2.7"
+
+sudo: true
+
+env:
+  - distribution: ubuntu
+    distribution_version: 16
+  - distribution: ubuntu
+    distribution_version: 14
+
+install:
+  # Installing latest ansible
+  - sudo -H pip install ansible
+  # Cloning testing template
+  - git clone https://github.com/Nani-o/ansible-template-role-test /etc/ansible
+
+script:
+  # Run tests.
+  - ansible --version
