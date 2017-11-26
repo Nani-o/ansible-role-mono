@@ -6,6 +6,6 @@
         src: hello.cs
         dest: /tmp/
     - name: Compile hello.cs
-      shell: mcs hello.cs
+      shell: mcs /tmp/hello.cs
     - name: Run hello.exe
-      shell: mono hello.exe
+      shell: mono /tmp/hello.exe
