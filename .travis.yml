@@ -18,6 +18,8 @@ install:
   - sudo mkdir /etc/ansible
   - sudo chown -R "${USER}:" /etc/ansible
   - git clone https://github.com/Nani-o/ansible-template-role-test /etc/ansible
+  # Executing setup
+  - ansible-playbook /etc/ansible/setup.yml
 
 script:
   # Run tests.
