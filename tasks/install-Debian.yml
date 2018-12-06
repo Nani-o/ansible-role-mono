@@ -10,6 +10,8 @@
     keyserver: "{{ mono_apt_keyserver }}"
     id: "{{ mono_apt_key_id }}"
     state: present
+  environment:
+    APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE: 1
 
 - name: Add mono apt repo
   apt_repository:
