@@ -10,12 +10,11 @@ Compatibility
 
   - CentOS 6
   - CentOS 7
-  - Ubuntu 12.04
-  - Ubuntu 14.04
+  - CentOS 8
   - Ubuntu 16.04
-  - Debian 7
-  - Debian 8
+  - Ubuntu 18.04
   - Debian 9
+  - Debian 10
 
 Variables
 ---------
